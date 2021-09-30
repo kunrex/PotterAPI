@@ -1,7 +1,6 @@
 const sectionsId = [
 	"#section0", "#section1", 
-	"#section2", "#section3", 
-	"#section4", "#section5"
+	"#section2", "#section3",
 ];
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +33,6 @@ function evenObject(id) {
 
 for(let i = 0; i < sectionsId.length; i++) {
 	let object = evenObject(sectionsId[i]);
-	if(i % 3 == 0) object = oddObject(sectionsId[i]);
+	if(i % 3 === 0) object = oddObject(sectionsId[i]);
 	gsap.from(sectionsId[i], object);
 }

@@ -13,6 +13,8 @@ func Start() error {
 		CaseSensitive: true,
 	})
 
+	app.Static("/", "./views")
+
 
 	for _, r := range routes {
 		app.Get(r.Url, r.Callback)
