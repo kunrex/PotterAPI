@@ -10,6 +10,7 @@ func Start() error {
 
 	app := fiber.New(fiber.Config{
 		Views: engine,
+		CaseSensitive: true,
 	})
 
 
