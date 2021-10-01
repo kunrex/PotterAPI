@@ -2,6 +2,7 @@ package api
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/template/html"
 )
 
@@ -13,6 +14,7 @@ func Start() error {
 		CaseSensitive: true,
 	})
 
+	app.Use(logger.New())
 	app.Static("/", "./static")
 
 
@@ -20,9 +22,6 @@ func Start() error {
 		app.Get(r.Url, r.Callback)
 	}
 
-	app.Use(func(c* fiber.Ctx) error {
-		return c.SendStatus(404)
-	})
 
 	err := app.Listen(":3000")
 
