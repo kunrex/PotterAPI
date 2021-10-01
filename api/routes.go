@@ -33,4 +33,14 @@ var routes = []Route{
 			return c.SendString(string(houses))
 		},
 	},
+	{
+		Url: "/horcruxes",
+		Callback: func(c *fiber.Ctx) error {
+			horcruxes, err := os.ReadFile("./data/horcruxes.json")
+
+			if err != nil { return c.SendStatus(500) }
+
+			return c.SendString(string(horcruxes))
+		},
+	},
 }
