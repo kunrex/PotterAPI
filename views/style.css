@@ -3,6 +3,9 @@ body {
 	font-family: Poppins, sans-serif;
 }
 
+#title {
+	alignment: center;
+}
 
 main {
 	display: flex;

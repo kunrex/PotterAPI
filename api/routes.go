@@ -12,14 +12,6 @@ type Route struct {
 
 var routes = []Route{
 	{
-		Url: "/",
-		Callback: func(c *fiber.Ctx) error {
-			return c.Render("index", fiber.Map{
-				"Title": "Harry Potter API",
-			})
-		},
-	},
-	{
 		Url: "/books",
 		Callback: func(c *fiber.Ctx) error {
 			book, err := os.ReadFile("./data/books.json")
