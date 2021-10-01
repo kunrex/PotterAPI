@@ -43,4 +43,10 @@ var routes = []Route{
 			return c.SendString(string(horcruxes))
 		},
 	},
+	{
+		Url: "/schools",
+		Callback: func(c *fiber.Ctx) error {
+			return c.SendString("Workin on it")
+		},
+	},
 }
