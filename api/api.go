@@ -13,7 +13,7 @@ func Start() error {
 		CaseSensitive: true,
 	})
 
-	app.Static("/", "./views")
+	app.Static("/", "./static")
 
 
 	for _, r := range routes {
