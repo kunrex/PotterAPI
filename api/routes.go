@@ -17,7 +17,7 @@ var routes = []Route{
 
 			if err != nil { return c.SendStatus(500) }
 
-			return c.SendString(string(book))
+			return c.SendString(book)
 		},
 	},
 	{
@@ -29,7 +29,7 @@ var routes = []Route{
 				return c.SendStatus(500)
 			}
 
-			return c.SendString(string(houses))
+			return c.SendString(houses)
 		},
 	},
 	{
@@ -49,7 +49,7 @@ var routes = []Route{
 
 			if err != nil { return c.SendStatus(500) }
 
-			return c.SendString(string(schools))
+			return c.SendString(schools)
 		},
 	},
 	{
