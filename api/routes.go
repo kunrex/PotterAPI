@@ -2,7 +2,6 @@ package api
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"os"
 )
 
 type Route struct {
@@ -14,7 +13,7 @@ var routes = []Route{
 	{
 		Url: "/books",
 		Callback: func(c *fiber.Ctx) error {
-			book, err := os.ReadFile("./data/books.json")
+			book, err := ReadFile("./data/books.json")
 
 			if err != nil { return c.SendStatus(500) }
 
@@ -24,7 +23,7 @@ var routes = []Route{
 	{
 		Url: "/houses",
 		Callback: func(c *fiber.Ctx) error {
-			houses, err := os.ReadFile("./data/houses.json")
+			houses, err := ReadFile("./data/houses.json")
 
 			if err != nil {
 				return c.SendStatus(500)
@@ -36,7 +35,7 @@ var routes = []Route{
 	{
 		Url: "/horcruxes",
 		Callback: func(c *fiber.Ctx) error {
-			horcruxes, err := os.ReadFile("./data/horcruxes.json")
+			horcruxes, err := ReadFile("./data/horcruxes.json")
 
 			if err != nil { return c.SendStatus(500) }
 
@@ -46,11 +45,17 @@ var routes = []Route{
 	{
 		Url: "/schools",
 		Callback: func(c *fiber.Ctx) error {
-			schools, err := os.ReadFile("./data/schools.json")
+			schools, err := ReadFile("./data/schools.json")
 
 			if err != nil { return c.SendStatus(500) }
 
 			return c.SendString(string(schools))
+		},
+	},
+	{
+		Url: "/subjects",
+		Callback: func(c *fiber.Ctx) error {
+			return c.SendString("Working on it!")
 		},
 	},
 }
