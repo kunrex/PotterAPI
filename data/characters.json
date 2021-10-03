@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Harry James Potter",
+    "actor": "Daniel Radcliff",
+    "house": "Gryffindor",
+    "gender": "Male",
+    "blood_status": "Half-Blood",
+    "is_death_eater": false,
+    "patronus": "Stag",
+    "wand": [
+      {
+        "wood": "Holly",
+        "core": "Phoenix Tail Feather",
+        "length": 11
+      }
+    ]
+  },
+  {
+    "name": "Hermione Jean Granger",
+    "actor": "Emma Watson",
+    "house": "Gryffindor",
+    "gender": "Female",
+    "blood_status": "Muggle-Born",
+    "is_death_eater": false,
+    "patronus": "Otter",
+    "wand": [
+      {
+        "wood": "Vine",
+        "core": "Dragon Heartstring",
+        "length": 10
+      }
+    ]
+  },
+  {
+    "name": "Ronald Bilius Weasley",
+    "actor": "Rupert Grint",
+    "house": "Gryffindor",
+    "gender": "Male",
+    "blood_status": "Pure-blood",
+    "is_death_eater": false,
+    "patronus": "Jack Russell Terrier",
+    "wand": [
+      {
+        "wood": "Ash",
+        "core": "Unicorn Hair",
+        "length": 12
+      },
+      {
+        "wood": "Willow",
+        "core": "Unicorn Hair",
+        "length": 14
+      }
+    ]
+  },
+]

@@ -15,7 +15,9 @@ var routes = []Route{
 		Callback: func(c *fiber.Ctx) error {
 			book, err := GetData("books")
 
-			if err != nil { return c.SendStatus(500) }
+			if err != nil {
+				return c.SendStatus(500)
+			}
 
 			return c.SendString(book)
 		},
@@ -37,7 +39,9 @@ var routes = []Route{
 		Callback: func(c *fiber.Ctx) error {
 			horcruxes, err := GetData("horcruxes")
 
-			if err != nil { return c.SendStatus(500) }
+			if err != nil {
+				return c.SendStatus(500)
+			}
 
 			return c.SendString(horcruxes)
 		},
@@ -47,7 +51,9 @@ var routes = []Route{
 		Callback: func(c *fiber.Ctx) error {
 			schools, err := GetData("schools")
 
-			if err != nil { return c.SendStatus(500) }
+			if err != nil {
+				return c.SendStatus(500)
+			}
 
 			return c.SendString(schools)
 		},
@@ -55,7 +61,23 @@ var routes = []Route{
 	{
 		Url: "/subjects",
 		Callback: func(c *fiber.Ctx) error {
-			return c.SendString("Working on it!")
+			subjects, err := GetData("subjects")
+
+			if err != nil {
+				return c.SendStatus(500)
+			}
+
+			return c.SendString(subjects)
+		},
+	},
+	{
+		Url: "/characters",
+		Callback: func(c *fiber.Ctx) error {
+			characters, err := GetData("characters")
+
+			if err != nil { return c.SendStatus(500) }
+
+			return c.SendString(characters)
 		},
 	},
 }
