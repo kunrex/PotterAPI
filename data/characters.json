@@ -77,7 +77,7 @@
     "actor": "Tom Felton",
     "house": "Slytherin",
     "gender": "Male",
-    "blood_status": "Pure blood",
+    "blood_status": "Pure-blood",
     "is_death_eater": false,
     "patronus": "",
     "wand": [
@@ -90,6 +90,22 @@
         "wood": "Elder",
         "core": "Thestral Tail Hair",
         "length": null
+      }
+    ]
+  },
+  {
+    "name": "Severus Snape",
+    "actor": "Alan Rickman",
+    "house": "Slytherin",
+    "gender": "Male",
+    "blood_status": "Half-blood",
+    "is_death_eater": true,
+    "patronus": "Doe",
+    "wand": [
+      {
+        "wood": "Unknown",
+        "core": "Unknown",
+        "length": 0
       }
     ]
   }
