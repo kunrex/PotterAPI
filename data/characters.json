@@ -134,5 +134,21 @@
         "length": null
       }
     ]
-  }
+  },
+  {
+    "name": "Ginevra Molly Potter",
+    "actor": "Bonny Wright",
+    "house": "Gryffindor",
+    "gender": "Female",
+    "blood_status": "Pure-blood",
+    "is_death_eater": false,
+    "patronus": "Horse",
+    "wand": [
+      {
+        "wood": "Yew",
+        "core": "Unknown core",
+        "length": null
+      }
+    ]
+  },
 ]
